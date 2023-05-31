@@ -12,4 +12,8 @@ Stores config and setup preferences for reuse.
 
 ## Tmux
 
-See the .tmux.conf file
+See the `.tmux.conf` file.
+
+## Vim 
+
+See the `.vimrc` file.
