@@ -9,6 +9,9 @@ Stores config and setup preferences for reuse.
     defaults write com.apple.Dock appswitcher-all-displays -bool true
     killall Dock
     ```
+## Shell
+
+See the `.zshrc` file.
 
 ## Tmux
 
