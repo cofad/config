@@ -17,6 +17,18 @@ alias gf="git fetch"
 alias gp="git pull"
 alias gb="git branch"
 
+# Prompt config
+ 
+## Loads version control
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+### Style prompt
+zstyle ':vcs_info:git:*' formats '%b '
+setopt PROMPT_SUBST
+PROMPT='%F{cyan}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f%F{green}$%f '
+
+
 kill-port() {
   kill -9 $(lsof -i:$1)
 }
