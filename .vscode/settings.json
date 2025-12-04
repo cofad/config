@@ -1,0 +1,57 @@
+{
+  // Editor config
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.cursorSurroundingLines": 100,
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.minimap.enabled": false,
+
+  // Extensions
+  "recommendations": [],
+
+  // Git config
+  "git.autofetch": true,
+
+  // Vim extension config
+  "vim.normalModeKeyBindings": [
+    // {
+    //   "before": ["<Leader>", "w"],
+    //   "commands": ["workbench.action.files.save"]
+    // },
+    // {
+    //   "before": ["<Leader>", "d"],
+    //   "commands": ["gitlens.diffWithPrevious"]
+    // },
+    {
+      "before": ["q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<Leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    }
+    // {
+    //   "before": ["a", "a"],
+    //   "commands": ["workbench.action.files.save"]
+    // }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<space>"],
+      "after": ["<Esc>"]
+    }
+  ],
+}
